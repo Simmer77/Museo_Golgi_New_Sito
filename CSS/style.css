@@ -11,6 +11,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizelegibility;
+  background-color: #fffeef;
 }
 
 body {
@@ -53,10 +54,10 @@ header hgroup {
   position: absolute;
   top: 50%;
   left: 50%;
-  color: #fff;
-  border: 5px solid #fff;
+  color: #6799cc;
+  border: 5px solid #6799cc;
   padding: .5em 3em;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 234, 239, 0.4);
   z-index: 2;
 }
 
@@ -79,7 +80,7 @@ img {
 
 .site {
   text-align: center;
-  background-color: #efefef;
+  background-color: #fffeef;
   font-size: .8em;
   color: #444;
   position: relative;
@@ -99,19 +100,20 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  background: #222;
+  background: #6799cc;
   width: 100%
 }
 
 .site nav a {
   padding: 10px 30px;
   font-size: 1.3em;
-  display: inline-block
+  display: inline-block;
+  color: #fffeef;
 }
 
 .site nav a:hover {
-  background: #333;
-  color: #fff
+  background-color: #fffeef;
+  color: #6799cc;
 }
 
 blockquote {
@@ -192,12 +194,14 @@ blockquote {
 
 .container .box .content a {
   text-decoration: none;
-  background: #000;
-  color: #fff;
+  background: #6799cc;
+  color: #fffeef;
   padding: 5px;
   display: inline-block;
   font-size: 0.85em;
 }
+
+
 
 .container .box .content h2,
 .container .box .content p,
@@ -238,7 +242,7 @@ blockquote {
 .contentvideo {
   position: fixed;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(103, 153, 204, 0.5);
   color: #f1f1f1;
   width: 100%;
   padding: 20px;
@@ -253,3 +257,13 @@ blockquote {
   padding: 10px 30px;
   font-size: 1.3em;
   }
+
+.contentvideo img {
+  height: 80px;
+  width: auto;
+}
+
+#stemma {
+  height: 100px;
+  width: auto;
+}

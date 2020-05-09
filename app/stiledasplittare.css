@@ -1,0 +1,246 @@
+.site {
+  text-align: center;
+  background-color: #fffeef;
+  font-size: .8em;
+  color: #444;
+  position: relative;
+  height: 100vh;
+}
+
+.site a {
+  color: #666;
+  text-decoration: none;
+}
+
+.site a:hover {
+  color: #222;
+}
+
+.site nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #6799cc;
+  width: 100%
+}
+
+.site nav a {
+  padding: 10px 30px;
+  font-size: 1.3em;
+  display: inline-block;
+  color: #fffeef;
+}
+
+.site nav a:hover {
+  background-color: #fffeef;
+  color: #6799cc;
+}
+
+
+.container {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.container .box {
+  position: relative;
+  width: 15vw;
+  height: 60vh;
+  margin: 30px 0;
+  box-sizing: border-box;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.container .box .imgBx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  clip-path: circle(400px at center 100px);
+  transition: 0.5s;
+  transition-delay: 0.5s;
+}
+
+.container .box:hover .imgBx {
+  clip-path: circle(80px at center 100px);
+  transition-delay: 0s;
+}
+
+.container .box .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container .box .content {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.container .box .content h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2em;
+}
+
+.container .box .content p {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+}
+
+.container .box .content a {
+  text-decoration: none;
+  background: #6799cc;
+  color: #fffeef;
+  margin-top: 8px;
+  padding: 5px;
+  display: inline-block;
+  font-size: 0.85em;
+}
+
+
+
+.container .box .content h2,
+.container .box .content p,
+.container .box .content a {
+  opacity: 0;
+  transition: 0.5s;
+  transform: translateY(20px);
+}
+
+.container .box:hover .content h2 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.5s
+}
+
+.container .box:hover .content p {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.7s
+}
+
+.container .box:hover .content a {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.9s
+}
+
+
+
+/* Grid */
+
+
+.col {
+	width: 100%;
+	float: left;
+	padding-right: 20px;
+	box-sizing: border-box;
+  justify-content: center;
+}
+
+.col-xs-11 {width: 91.662%}
+.col-xs-10 {width: 83.332%;}
+.col-xs-9 {width: 75%;}
+.col-xs-8 {width: 66.662%;}
+.col-xs-7 {width: 58.331%}
+.col-xs-6 {width: 50%;}
+.col-xs-5 {width: 41.662%}
+.col-xs-4 {width: 33.332%;}
+.col-xs-3 {width: 25%;}
+.col-xs-2 {width: 16.662%;}
+.col-xs-1 {width: 8.332%;}
+
+@media screen and (min-width: 768px) {
+
+
+
+	.col-sm-11 {width: 91.662%}
+	.col-sm-10 {width: 83.332%;}
+	.col-sm-9 {width: 75%;}
+	.col-sm-8 {width: 66.662%;}
+	.col-sm-7 {width: 58.331%}
+	.col-sm-6 {width: 50%;}
+	.col-sm-5 {width: 41.662%}
+	.col-sm-4 {width: 33.332%;}
+	.col-sm-3 {width: 25%;}
+	.col-sm-2 {width: 16.662%;}
+	.col-sm-1 {width: 8.332%;}
+
+}
+
+@media screen and (min-width: 1024px) {
+
+	.col-md-11 {width: 91.662%}
+	.col-md-10 {width: 83.332%;}
+	.col-md-9 {width: 75%;}
+	.col-md-8 {width: 66.662%;}
+	.col-md-7 {width: 58.331%}
+	.col-md-6 {width: 50%;}
+	.col-md-5 {width: 41.662%}
+	.col-md-4 {width: 33.332%;}
+	.col-md-3 {width: 25%;}
+	.col-md-2 {width: 16.662%;}
+	.col-md-1 {width: 8.332%;}
+
+}
+
+@media screen and (min-width: 1280px) {
+
+	.col-lg-11 {width: 91.662%}
+	.col-lg-10 {width: 83.332%;}
+	.col-lg-9 {width: 75%;}
+	.col-lg-8 {width: 66.662%;}
+	.col-lg-7 {width: 58.331%}
+	.col-lg-6 {width: 50%;}
+	.col-lg-5 {width: 41.662%}
+	.col-lg-4 {width: 33.332%;}
+	.col-lg-3 {width: 25%;}
+	.col-lg-2 {width: 16.662%;}
+	.col-lg-1 {width: 8.332%;}
+
+}
+
+
+@media screen and (max-width: 1023px) {
+  .container .box {
+    width: 30vw;
+    height: 30vh;
+    margin: 15px 0;
+  }
+}
+
+
+.row:before,
+.row:after,
+.group:before,
+.group:after {
+	content: "";
+	display: table;
+}
+
+.row:after,
+.group:after {
+	clear: both;
+}
+
+.row,
+.group {
+	zoom: 1;
+}

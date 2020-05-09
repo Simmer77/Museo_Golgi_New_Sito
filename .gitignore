@@ -1,0 +1,6 @@
+*.diff
+*.err
+*.orig
+
+node_modules/
+.tmp/
